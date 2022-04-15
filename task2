@@ -1,0 +1,12 @@
+About the scenario and the services that are running on the server is important to consider:
+
+[1] SSL offload and proxy, some important metrics to monitor are:
+  - Load Average
+  - Network throughput
+  - Disk IOPS
+  - CPU, Disk and Memory Usage
+  
+[2] To monitor these informations, a zabbix agent must be installed in the server, using modules or parameters to define exactly what need to me monitored.
+    The zabbix server, must receive the information and have configured triggers to efficiently monitor the resources and take automatic actions or alarm, depending the configuration of each parameter.
+
+[3] I believe the challenging in monitoring this server is about the high number of requests per second what makes a small problem can turn into a big catastrophe in seconds if anything go wrong. This contributes to the need to have a perfect observability and a quick response to put the things back in tracks.
